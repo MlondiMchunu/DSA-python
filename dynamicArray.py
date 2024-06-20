@@ -26,6 +26,10 @@ class DynamicArray:
             new_arr[i] = self.arr[i]
             self.arr = new_arr
 
+    def popback(self)->int:
+        self.size -=1
+        return self.arr[self.size]
+
     
 
     def getSize(self):
