@@ -2,7 +2,7 @@ class DynamicArray:
     def __init__(self,capacity:int):
         self.size = 0
         self.capacity = capacity
-        self.array = [0]* capacity
+        self.arr = [0]* capacity
 
 
     def insert(self, i:int, n:int)->None:
