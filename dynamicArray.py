@@ -39,8 +39,12 @@ class DynamicArray:
         return self.capacity
     
     def print(self):
+        elements = []
         for i in range(self.size):
-            print(self.arr[i])
+            elements.append( self.arr[i])
+
+        return elements
+        
     
 if __name__ =="__main__":
 
@@ -52,6 +56,5 @@ if __name__ =="__main__":
     da.pushback(19)
     da.pushback(30)
 
-    print(da.get(4))
 
-    da.print()
+    print("array elements ", da.print())
