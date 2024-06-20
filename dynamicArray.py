@@ -38,9 +38,20 @@ class DynamicArray:
     def getCapacity(self):
         return self.capacity
     
+    def print(self):
+        for i in range(self.size):
+            print(self.arr[i])
+    
 if __name__ =="__main__":
 
-    da = DynamicArray(5)
+    da = DynamicArray(20)
     da.pushback(2)
     da.pushback(8)
-    print(da.get(1))
+    da.pushback(46)
+    da.pushback(92)
+    da.pushback(19)
+    da.pushback(30)
+
+    print(da.get(4))
+
+    da.print()
