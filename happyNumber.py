@@ -11,3 +11,8 @@ class Solution:
                 sum += temp * temp
                 n = n // 10
             return self.isHappy(sum)
+
+
+solution = Solution()
+
+print(solution.isHappy(85))
