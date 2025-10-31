@@ -10,3 +10,8 @@ class Solution:
             profit = max(profit, p - buy_price)
 
         return profit
+
+
+solution = Solution()
+
+print(solution.maxProfit([7,1,5,3,6,4]))
